@@ -48,7 +48,8 @@ navigator.geolocation.getCurrentPosition(
             className: 'running-popup',
           })
         )
-        .setPopupContent('location').openPopup();
+        .setPopupContent('location')
+        .openPopup();
     });
   },
   function () {
