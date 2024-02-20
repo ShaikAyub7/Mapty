@@ -89,6 +89,8 @@ const inputDistance = document.querySelector('.form__input--distance');
 const inputDuration = document.querySelector('.form__input--duration');
 const inputCadence = document.querySelector('.form__input--cadence');
 const inputElevation = document.querySelector('.form__input--elevation');
+const pop = document.querySelector('.pop');
+const btn = document.querySelector('.btn');
 
 let map, mapEvent;
 
@@ -112,7 +114,8 @@ if (navigator.geolocation) {
       });
     },
     function () {
-      alert('Please Allow your Location');
+      // alert('Please Allow your Location');
+      pop.classList.remove('hidden');
     }
   );
 } else {
@@ -145,6 +148,19 @@ form.addEventListener('submit', function (e) {
       '';
 });
 
+function refreshPage() {
+  location.reload();
+}
+
+// Call the function to refresh the page
+
 inputType.addEventListener('change', function () {
   inputElevation.closest('form__row').classList.toggle('form__row--hidden');
+});
+
+btn.addEventListener('click', function () {
+  pop.classList.add('hidden');
+  // function refreshPage() {
+  //   location.reload();
+  // }
 });

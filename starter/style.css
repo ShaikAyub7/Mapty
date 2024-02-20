@@ -219,3 +219,33 @@ a:visited {
 .cycling-popup .leaflet-popup-content-wrapper {
   border-left: 5px solid var(--color-brand--1);
 }
+.pop{
+
+  width: 300px;
+  height: 110px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  left: 850px;
+  color: #2d3439;
+  box-shadow: 1px 1px 2px  1px;
+  /* transition: all 2s ease; */
+}
+.pop h3{
+
+  margin-top: 30px;
+}
+.hidden{
+  display: none;
+}
+.btn{
+  padding: 0.8rem;
+  position: absolute;
+  bottom: 10px;
+  border: none;
+  border-radius: 20px;
+}
